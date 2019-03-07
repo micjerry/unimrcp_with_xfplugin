@@ -1,0 +1,98 @@
+---- DETECTOR_STATE_INACTIVITY Matches (6 in 1 files) ----
+Mpf_activity_detector.c (libs\mpf\src):	DETECTOR_STATE_INACTIVITY,           /**< inactivity detected */
+Mpf_activity_detector.c (libs\mpf\src):	detector->state = DETECTOR_STATE_INACTIVITY;
+Mpf_activity_detector.c (libs\mpf\src):	detector->state = DETECTOR_STATE_INACTIVITY;
+Mpf_activity_detector.c (libs\mpf\src):	if(detector->state == DETECTOR_STATE_INACTIVITY) {
+Mpf_activity_detector.c (libs\mpf\src):			mpf_activity_detector_state_change(detector,DETECTOR_STATE_INACTIVITY);
+Mpf_activity_detector.c (libs\mpf\src):				mpf_activity_detector_state_change(detector,DETECTOR_STATE_INACTIVITY);
+---- mpf_buffer_audio_write Matches (3 in 3 files) ----
+Mpf_buffer.c (libs\mpf\src):apt_bool_t mpf_buffer_audio_write(mpf_buffer_t *buffer, void *data, apr_size_t size)
+Mpf_buffer.h (libs\mpf\include):apt_bool_t mpf_buffer_audio_write(mpf_buffer_t *buffer, void *data, apr_size_t size);
+Xfyun_synth_engine.c (plugins\xfyun-synth\src):			mpf_buffer_audio_write(buffer, data, audio_len);
+---- level_threshold Matches (10 in 2 files) ----
+Mpf_activity_detector.c (libs\mpf\src):	apr_size_t           level_threshold;
+Mpf_activity_detector.c (libs\mpf\src):	detector->level_threshold = 2; /* 0 .. 255 */
+Mpf_activity_detector.c (libs\mpf\src):MPF_DECLARE(void) mpf_activity_detector_level_set(mpf_activity_detector_t *detector, apr_size_t level_threshold)
+Mpf_activity_detector.c (libs\mpf\src):	detector->level_threshold = level_threshold;
+Mpf_activity_detector.c (libs\mpf\src):		if(level >= detector->level_threshold) {
+Mpf_activity_detector.c (libs\mpf\src):		if(level >= detector->level_threshold) {
+Mpf_activity_detector.c (libs\mpf\src):		if(level >= detector->level_threshold) {
+Mpf_activity_detector.c (libs\mpf\src):		if(level >= detector->level_threshold) {
+Mpf_activity_detector.h (libs\mpf\include):MPF_DECLARE(void) mpf_activity_detector_level_set(mpf_activity_detector_t *detector, apr_size_t level_threshold);
+---- MRCP_MESSAGE_SIDRES Matches (76 in 13 files) ----
+Demo_recog_engine.c (plugins\demo-recog\src):		apt_log(RECOG_LOG_MARK,APT_PRIO_WARNING,"Failed to Get Codec Descriptor " APT_SIDRES_FMT, MRCP_MESSAGE_SIDRES(request));
+Demo_recog_engine.c (plugins\demo-recog\src):					MRCP_MESSAGE_SIDRES(recog_channel->recog_request));
+Demo_recog_engine.c (plugins\demo-recog\src):					MRCP_MESSAGE_SIDRES(recog_channel->recog_request));
+Demo_recog_engine.c (plugins\demo-recog\src):					MRCP_MESSAGE_SIDRES(recog_channel->recog_request));
+Demo_recog_engine.c (plugins\demo-recog\src):						MRCP_MESSAGE_SIDRES(recog_channel->recog_request),
+Demo_recog_engine.c (plugins\demo-recog\src):						MRCP_MESSAGE_SIDRES(recog_channel->recog_request),
+Demo_synth_engine.c (plugins\demo-synth\src):		apt_log(SYNTH_LOG_MARK,APT_PRIO_WARNING,"Failed to Get Codec Descriptor " APT_SIDRES_FMT, MRCP_MESSAGE_SIDRES(request));
+Demo_synth_engine.c (plugins\demo-synth\src):				MRCP_MESSAGE_SIDRES(request));
+Demo_synth_engine.c (plugins\demo-synth\src):				MRCP_MESSAGE_SIDRES(request));
+Demo_verifier_engine.c (plugins\demo-verifier\src):		apt_log(VERIF_LOG_MARK,APT_PRIO_WARNING,"Failed to Get Codec Descriptor " APT_SIDRES_FMT, MRCP_MESSAGE_SIDRES(request));
+Demo_verifier_engine.c (plugins\demo-verifier\src):					MRCP_MESSAGE_SIDRES(verifier_channel->verifier_request));
+Demo_verifier_engine.c (plugins\demo-verifier\src):					MRCP_MESSAGE_SIDRES(verifier_channel->verifier_request));
+Demo_verifier_engine.c (plugins\demo-verifier\src):					MRCP_MESSAGE_SIDRES(verifier_channel->verifier_request));
+Demo_verifier_engine.c (plugins\demo-verifier\src):						MRCP_MESSAGE_SIDRES(verifier_channel->verifier_request),
+Demo_verifier_engine.c (plugins\demo-verifier\src):						MRCP_MESSAGE_SIDRES(verifier_channel->verifier_request),
+Mrcp_client_connection.c (libs\mrcpv2-transport\src):		MRCP_MESSAGE_SIDRES(message),
+Mrcp_client_connection.c (libs\mrcpv2-transport\src):		apt_obj_log(APT_LOG_MARK,APT_PRIO_WARNING,channel->log_obj,"Null MRCPv2 Connection " APT_SIDRES_FMT,MRCP_MESSAGE_SIDRES(message));
+Mrcp_client_connection.c (libs\mrcpv2-transport\src):						MRCP_MESSAGE_SIDRES(message),
+Mrcp_client_connection.c (libs\mrcpv2-transport\src):				MRCP_MESSAGE_SIDRES(message),
+Mrcp_message.h (libs\mrcp\message\include):#define MRCP_MESSAGE_SIDRES(message) \
+Mrcp_recog_state_machine.c (libs\mrcp-engine\src):		MRCP_MESSAGE_SIDRES(message));
+Mrcp_recog_state_machine.c (libs\mrcp-engine\src):			MRCP_MESSAGE_SIDRES(message),
+Mrcp_recog_state_machine.c (libs\mrcp-engine\src):				MRCP_MESSAGE_SIDRES(pending_message),
+Mrcp_recog_state_machine.c (libs\mrcp-engine\src):				MRCP_MESSAGE_SIDRES(message),
+Mrcp_recog_state_machine.c (libs\mrcp-engine\src):			MRCP_MESSAGE_SIDRES(pending_request),
+Mrcp_recog_state_machine.c (libs\mrcp-engine\src):			MRCP_MESSAGE_SIDRES(message),
+Mrcp_recog_state_machine.c (libs\mrcp-engine\src):			MRCP_MESSAGE_SIDRES(message),
+Mrcp_recog_state_machine.c (libs\mrcp-engine\src):			MRCP_MESSAGE_SIDRES(message),
+Mrcp_recog_state_machine.c (libs\mrcp-engine\src):			MRCP_MESSAGE_SIDRES(pending_request),
+Mrcp_recog_state_machine.c (libs\mrcp-engine\src):		MRCP_MESSAGE_SIDRES(message),
+Mrcp_recog_state_machine.c (libs\mrcp-engine\src):		MRCP_MESSAGE_SIDRES(message),
+Mrcp_recog_state_machine.c (libs\mrcp-engine\src):		MRCP_MESSAGE_SIDRES(message),
+Mrcp_recog_state_machine.c (libs\mrcp-engine\src):		MRCP_MESSAGE_SIDRES(message),
+Mrcp_recorder_engine.c (plugins\mrcp-recorder\src):		apt_log(RECORD_LOG_MARK,APT_PRIO_WARNING,"Failed to Get Codec Descriptor " APT_SIDRES_FMT, MRCP_MESSAGE_SIDRES(request));
+Mrcp_recorder_engine.c (plugins\mrcp-recorder\src):					MRCP_MESSAGE_SIDRES(recorder_channel->record_request));
+Mrcp_recorder_engine.c (plugins\mrcp-recorder\src):					MRCP_MESSAGE_SIDRES(recorder_channel->record_request));
+Mrcp_recorder_engine.c (plugins\mrcp-recorder\src):					MRCP_MESSAGE_SIDRES(recorder_channel->record_request));
+Mrcp_recorder_state_machine.c (libs\mrcp-engine\src):		MRCP_MESSAGE_SIDRES(message));
+Mrcp_recorder_state_machine.c (libs\mrcp-engine\src):			MRCP_MESSAGE_SIDRES(message),
+Mrcp_recorder_state_machine.c (libs\mrcp-engine\src):			MRCP_MESSAGE_SIDRES(message),
+Mrcp_recorder_state_machine.c (libs\mrcp-engine\src):			MRCP_MESSAGE_SIDRES(message),
+Mrcp_recorder_state_machine.c (libs\mrcp-engine\src):			MRCP_MESSAGE_SIDRES(message),
+Mrcp_recorder_state_machine.c (libs\mrcp-engine\src):		MRCP_MESSAGE_SIDRES(message),
+Mrcp_recorder_state_machine.c (libs\mrcp-engine\src):		MRCP_MESSAGE_SIDRES(message),
+Mrcp_recorder_state_machine.c (libs\mrcp-engine\src):		MRCP_MESSAGE_SIDRES(message),
+Mrcp_recorder_state_machine.c (libs\mrcp-engine\src):		MRCP_MESSAGE_SIDRES(message),
+Mrcp_server_connection.c (libs\mrcpv2-transport\src):		apt_log(APT_LOG_MARK,APT_PRIO_WARNING,"Null MRCPv2 Connection " APT_SIDRES_FMT,MRCP_MESSAGE_SIDRES(message));
+Mrcp_server_connection.c (libs\mrcpv2-transport\src):				MRCP_MESSAGE_SIDRES(message),
+Mrcp_synth_state_machine.c (libs\mrcp-engine\src):		MRCP_MESSAGE_SIDRES(message));
+Mrcp_synth_state_machine.c (libs\mrcp-engine\src):			MRCP_MESSAGE_SIDRES(message),
+Mrcp_synth_state_machine.c (libs\mrcp-engine\src):				MRCP_MESSAGE_SIDRES(pending_message),
+Mrcp_synth_state_machine.c (libs\mrcp-engine\src):				MRCP_MESSAGE_SIDRES(message),
+Mrcp_synth_state_machine.c (libs\mrcp-engine\src):			MRCP_MESSAGE_SIDRES(message),
+Mrcp_synth_state_machine.c (libs\mrcp-engine\src):			MRCP_MESSAGE_SIDRES(message),
+Mrcp_synth_state_machine.c (libs\mrcp-engine\src):			MRCP_MESSAGE_SIDRES(message),
+Mrcp_synth_state_machine.c (libs\mrcp-engine\src):			MRCP_MESSAGE_SIDRES(message),
+Mrcp_synth_state_machine.c (libs\mrcp-engine\src):			MRCP_MESSAGE_SIDRES(pending_request),
+Mrcp_synth_state_machine.c (libs\mrcp-engine\src):		MRCP_MESSAGE_SIDRES(message),
+Mrcp_synth_state_machine.c (libs\mrcp-engine\src):		MRCP_MESSAGE_SIDRES(message),
+Mrcp_synth_state_machine.c (libs\mrcp-engine\src):		MRCP_MESSAGE_SIDRES(message),
+Mrcp_synth_state_machine.c (libs\mrcp-engine\src):		MRCP_MESSAGE_SIDRES(message),
+Mrcp_verifier_state_machine.c (libs\mrcp-engine\src):		MRCP_MESSAGE_SIDRES(message));
+Mrcp_verifier_state_machine.c (libs\mrcp-engine\src):			MRCP_MESSAGE_SIDRES(message),
+Mrcp_verifier_state_machine.c (libs\mrcp-engine\src):			MRCP_MESSAGE_SIDRES(message),
+Mrcp_verifier_state_machine.c (libs\mrcp-engine\src):			MRCP_MESSAGE_SIDRES(message),
+Mrcp_verifier_state_machine.c (libs\mrcp-engine\src):		MRCP_MESSAGE_SIDRES(message),
+Mrcp_verifier_state_machine.c (libs\mrcp-engine\src):		MRCP_MESSAGE_SIDRES(message),
+Mrcp_verifier_state_machine.c (libs\mrcp-engine\src):		MRCP_MESSAGE_SIDRES(message),
+Mrcp_verifier_state_machine.c (libs\mrcp-engine\src):		MRCP_MESSAGE_SIDRES(message),
+Xfyun_recog_engine.c (plugins\xfyun-recog\src):		apt_log(RECOG_LOG_MARK,APT_PRIO_WARNING,"Failed to Get Codec Descriptor " APT_SIDRES_FMT, MRCP_MESSAGE_SIDRES(request));
+Xfyun_recog_engine.c (plugins\xfyun-recog\src):					MRCP_MESSAGE_SIDRES(recog_channel->recog_request));
+Xfyun_recog_engine.c (plugins\xfyun-recog\src):					MRCP_MESSAGE_SIDRES(recog_channel->recog_request));
+Xfyun_recog_engine.c (plugins\xfyun-recog\src):					MRCP_MESSAGE_SIDRES(recog_channel->recog_request));
+Xfyun_recog_engine.c (plugins\xfyun-recog\src):						MRCP_MESSAGE_SIDRES(recog_channel->recog_request),
+Xfyun_recog_engine.c (plugins\xfyun-recog\src):						MRCP_MESSAGE_SIDRES(recog_channel->recog_request),
+Xfyun_synth_engine.c (plugins\xfyun-synth\src):		apt_log(SYNTH_LOG_MARK,APT_PRIO_WARNING,"Failed to Get Codec Descriptor " APT_SIDRES_FMT, MRCP_MESSAGE_SIDRES(request));

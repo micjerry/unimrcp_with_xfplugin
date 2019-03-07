@@ -1,0 +1,11 @@
+[Unit]
+Description=UniMRCP Server
+After=network.target
+
+[Service]
+Type=forking
+ExecStart=/usr/local/unimrcp/bin/unimrcpserver -r /usr/local/unimrcp -o 3 -d -w
+Restart=on-abort
+
+[Install]
+WantedBy=multi-user.target
