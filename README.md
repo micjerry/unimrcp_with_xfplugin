@@ -7,4 +7,5 @@ cd unimrcp-deps-1.5.0
 ./build-dep-libs.sh
 
 #build install unimrcp
-
+cd unimrcp-unimrcp-1.5.0_plugin
+./install.sh
