@@ -467,12 +467,12 @@ static apt_bool_t xfyun_recog_result_load(xfyun_recog_channel_t *recog_channel, 
 	}
 
 	body->buf = apr_psprintf(message->pool,
-		"<?xml version=\"1.0\"?>\n"
-		"<result>\n"
-		"  <interpretation confidence=\"%d\">\n"
-		"    <instance>%s</instance>\n"
-		"    <input mode=\"speech\">%s</input>\n"
-		"  </interpretation>\n"
+		"<?xml version=\"1.0\"?>"
+		"<result>"
+		"  <interpretation confidence=\"%d\">"
+		"    <instance>%s</instance>"
+		"    <input mode=\"speech\">%s</input>"
+		"  </interpretation>"
 		"</result>\n",
 		99,
 		recog_channel->last_result,
